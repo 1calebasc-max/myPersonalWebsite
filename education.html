@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educational Resources</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,6 +18,7 @@
         <a href="index.html">Home</a>
         <a href="education.html" class="active">Educational Resources</a>
         <a href="community.html">Community Resources</a>
+        <a href="index.html#problems">Problems</a>
         <a href="index.html#about">About Me</a>
     </nav>
 
@@ -26,31 +28,37 @@
 
     <h2>Educational Resources</h2>
 
-    <div class="line"></div>
+    <p class="resource-description">
+        Search for free educational opportunities based on your
+        major and grade level. The Access Code will help you
+        discover scholarships, internships, summer programs,
+        competitions, and more.
+    </p>
 
     <div class="resource-box">
 
-        <p>
-            Search for free educational opportunities based on your
-            interests and grade level.
-        </p>
+        <label for="major">Major</label>
+        <input
+            type="text"
+            id="major"
+            placeholder="Computer Science, Nursing, Business..."
+        >
 
-        <label>Major</label>
-        <input type="text" placeholder="Computer Science">
+        <label for="grade">Grade Level</label>
 
-        <label>Grade Level</label>
-
-        <select>
-            <option>Select Grade</option>
+        <select id="grade">
+            <option value="">Select Grade Level</option>
             <option>Freshman</option>
             <option>Sophomore</option>
             <option>Junior</option>
             <option>Senior</option>
         </select>
 
-        <a href="education-results.html" class="btn">
+        <button id="educationSearch" class="btn">
             Search
-        </a>
+        </button>
+
+        <br><br>
 
         <a href="index.html" class="btn">
             Back to Home
@@ -61,8 +69,39 @@
 </section>
 
 <footer>
-    <p>© 2026 The Access Code</p>
+
+    <div class="footer-content">
+
+        <div>
+
+            <h3>The Access Code</h3>
+
+            <p>
+                Helping students discover opportunities through technology.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <p><a href="index.html">Home</a></p>
+            <p><a href="community.html">Community Resources</a></p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        © 2026 The Access Code
+    </p>
+
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
